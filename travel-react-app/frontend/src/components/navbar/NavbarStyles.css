@@ -19,3 +19,19 @@ li {
     display: none;
     padding: 1rem;
 }
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-icons {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
