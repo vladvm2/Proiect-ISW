@@ -13,7 +13,7 @@ function Navbar() {
     const [nav, setNav] = useState(false)
     const handleNav = () => setNav(!nav)
     return (
-        <div className='navbar'>
+        <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
             <div className="logo">
             <h2>BEACHES.</h2>
         </div>
@@ -25,7 +25,7 @@ function Navbar() {
     <li>Views</li>
         </ul>
         <div className="nav-icons">
-            <BiSearch className='icon' />
+            <BiSearch className='icon' style={{marginRight:'1rem'}} />
             <BsPerson className='icon' />
 
         </div>

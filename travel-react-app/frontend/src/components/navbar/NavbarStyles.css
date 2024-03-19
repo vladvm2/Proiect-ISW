@@ -6,6 +6,12 @@
     align-items: center;
     padding: 0 1rem;
     z-index: 2;
+    position: absolute;
+    color: #fff;
+}
+
+.navbar-bg {
+    background-color: #fff;
 }
 
 .nav-menu {
