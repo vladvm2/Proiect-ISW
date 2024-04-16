@@ -4,6 +4,6 @@ Podar Alexandru Ionut-team lead
 Bobocea Iulian-backend  
 
 Tehnologii folosite: 
-frontend: React
+frontend: React, CSS, JavaScript, HTML
 backend: NodeExpress
-DB: SQL
+DB: MongoDB
