@@ -1,0 +1,92 @@
+/* HolidayStays.css */
+.container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .header {
+    background-color: #003580;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .logo {
+    max-height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links li a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  .login-btn {
+    background-color: #ff7200;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .search-input {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+  }
+  
+  .search-btn {
+    background-color: #ff7200;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .recent-searches, .promotions, .explore-section {
+    padding: 2rem 0;
+  }
+  
+  .search-cards-container, .promotion-cards-container, .explore-cards-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+  }
+  
+  .search-card, .promotion-card, .explore-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    min-width: 200px;
+  }
+  
+  h2 {
+    color: #003580;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  

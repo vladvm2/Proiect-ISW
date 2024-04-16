@@ -1,0 +1,178 @@
+/* Stilizare pentru containerul principalelor atracții */
+.attractions-container {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stilizare pentru secțiunea de căutare */
+.search-section {
+    background-color: #f2f2f2; /* Schimbăm culoarea fundalului */
+    color: #333333; /* Schimbăm culoarea textului */
+    padding: 20px;
+    text-align: center;
+}
+
+.search-section h1 {
+    margin-bottom: 10px;
+}
+
+.search-section p {
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.search-form input {
+    padding: 10px;
+    border: 1px solid #ccc; /* Adăugăm un contur subtil */
+    border-radius: 5px;
+    width: 300px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #ff6200; /* Păstrăm aceeași culoare portocalie */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #e25700; /* Schimbăm culoarea la hover */
+}
+
+/* Stilizare pentru lista de atracții */
+.attractions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.attraction-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.attraction-info {
+    padding: 15px;
+    background-color: #f8f8f8;
+    text-align: left;
+}
+
+.attraction-info h3 {
+    margin: 0 0 5px 0;
+}
+
+.attraction-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Stilizare pentru secțiunea de autentificare */
+.authentication-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin-top: 40px;
+}
+
+.authentication-section h2 {
+    margin-bottom: 10px;
+}
+
+.authentication-section p {
+    margin-bottom: 20px;
+}
+
+.authentication-section button {
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.authentication-section button:hover {
+    background-color: #005b8a; /* Schimbăm culoarea la hover */
+}
+
+/* Stilizare pentru secțiunea 'Ne-am ocupat de toate' */
+.care-section {
+    background-color: #eeeeee;
+    padding: 40px 20px;
+}
+
+.care-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.care-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.care-card {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.care-card .icon {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.care-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.care-card p {
+    margin: 0;
+    color: #555;
+}
+
+/* Media queries pentru responsivitate */
+@media (max-width: 600px) {
+    .search-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-form input,
+    .search-form button {
+        width: 100%;
+    }
+
+    .care-cards {
+        justify-content: center;
+    }
+
+    .care-card {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
