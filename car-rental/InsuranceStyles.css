@@ -1,0 +1,53 @@
+.insurance-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .insurance-container h1, .insurance-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .questions-container, .additional-help {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .question, .help-item {
+    padding: 15px;
+    border-bottom: 1px solid #CCCCCC;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+  }
+  
+  .question:after, .help-item:after {
+    content: '>';
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .question:last-child {
+    border-bottom: none;
+  }
+  
+  .question:hover, .help-item:hover {
+    background-color: #F7F7F7;
+  }
+  
+  .additional-help .help-item {
+    background-color: #EDF5FF;
+    color: #0056b3;
+    font-weight: bold;
+  }
+  
+  .help-item:not(:last-child) {
+    border-bottom: 1px solid #CCCCCC;
+  }
+  
