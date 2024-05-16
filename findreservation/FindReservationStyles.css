@@ -1,0 +1,73 @@
+.find-reservation-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.continue-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.continue-button:hover {
+    background-color: #003580;
+}
+
+.reservation-help {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.reservation-help .help-action {
+    background: transparent;
+    color: #0056b3;
+    padding: 10px 15px;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}
+
+.reservation-help .help-action.resend {
+    margin-bottom: 10px;
+}
+
+.reservation-help .help-action.auth {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.reservation-help .help-action.auth:hover {
+    background-color: #003580;
+}
