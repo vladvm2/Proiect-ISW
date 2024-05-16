@@ -3,7 +3,7 @@ import {
   getAllFlights,
   getFlightById,
   createFlight,
-  updateFlight,
+  updateFlights,
   deleteFlight,
   searchFlights,
 } from '../controllers/flightController.js'
@@ -167,7 +167,7 @@ router.post('/', requireAdmin, createFlight)
  *       500:
  *         description: Server error
  */
-router.put('/:id', requireAdmin, updateFlight)
+router.put('/batch-update', updateFlights)
 
 /**
  * @swagger
