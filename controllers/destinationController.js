@@ -1,5 +1,5 @@
 import Destination from '../models/destinationModel.js'
-//abc
+
 // Get all destinations
 const getDestinations = async (req, res) => {
   try {
