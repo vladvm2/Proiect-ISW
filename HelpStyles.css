@@ -1,0 +1,154 @@
+/* HelpStyles.css */
+.help-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.help-header {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.help-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.contact-option {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  flex-basis: 45%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-option h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+.contact-option p {
+  color: #666;
+}
+
+.authentication-button,
+.continue-button {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  width: calc(45% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.continue-button {
+  background-color: transparent;
+  color: #0056b3;
+  border: 1px solid #0056b3;
+  margin-top: 10px;
+}
+
+.authentication-button:hover {
+  background-color: #003580;
+}
+
+.continue-button:hover {
+  background-color: #eef0f1;
+}
+
+.faq-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.faq-categories a,
+.faq-list a {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  color: #0056b3;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.faq-categories a:hover,
+.faq-list a:hover {
+  background-color: #eef0f1;
+}
+
+.faq-categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.faq-categories a {
+  margin: 5px;
+  flex: 1 1 180px;
+  text-align: center;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.help-footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.help-footer a {
+  color: #0056b3;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.help-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-options {
+    flex-direction: column;
+  }
+
+  .contact-option {
+    margin-bottom: 20px;
+    flex-basis: auto;
+  }
+
+  .authentication-button,
+  .continue-button {
+    width: 100%;
+  }
+
+  .faq-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-categories a {
+    margin-bottom: 10px;
+  }
+}
