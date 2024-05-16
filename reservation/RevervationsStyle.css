@@ -1,0 +1,129 @@
+h1 {
+  text-align: center;
+}
+.reservations-screen {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.button-no-background {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+}
+
+.ticket {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.ticket-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.ticket-actions button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ticket-actions button:hover {
+  background-color: #0056b3;
+}
+
+.summary {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pay-button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payment-icon {
+  width: 50px;
+  height: auto;
+}
+
+.summary p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.quantity label {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.quantity select {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quantity select:hover {
+  border-color: #888;
+}
+
+.quantity select:focus {
+  border-color: #0056b3;
+  background: #fff;
+  color: #333;
+}
