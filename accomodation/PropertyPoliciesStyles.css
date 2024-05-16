@@ -1,0 +1,61 @@
+/* PropertyPoliciesStyles.css */
+.property-policies-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #003580;
+    margin-bottom: 20px;
+}
+
+.faq-list-container {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.faq-item {
+    padding: 16px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item:hover {
+    background-color: #f7f7f7;
+}
+
+.chevron {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.additional-help {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #003580;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.additional-help:hover {
+    background-color: #e2e2e2;
+}

@@ -1,0 +1,48 @@
+/* CancellationsStyles.css */
+.cancellations-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #6c757d;
+  }
+  
+  h1 {
+    color: #003580; /* sau orice culoare preferi */
+    margin-bottom: 20px;
+  }
+  
+  .faq-list-container {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .faq-item {
+    padding: 16px 24px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+  
+  .faq-item:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .chevron {
+    font-size: 24px; /* Ajustează dimensiunea după preferințe */
+    color: #ccc;
+  }
+  
+  /* Adaugă aici stiluri pentru elementul suplimentar de asistență și pentru footer */
+  
