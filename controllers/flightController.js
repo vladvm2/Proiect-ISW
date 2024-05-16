@@ -82,15 +82,25 @@ export const createFlight = async (req, res) => {
   }
 }
 
-// Update a flight
-export const updateFlight = async (req, res) => {
-  const { id } = req.params
+// Update a flights
+export const updateFlights = async (req, res) => {
   try {
-    const flight = await Flight.findByIdAndUpdate(id, req.body, { new: true })
-    if (!flight) {
-      return res.status(404).json({ message: 'Flight not found' })
-    }
-    res.status(200).json(flight)
+    const updates = req.body.updates
+    const bulkOperations = updates.map(update => ({
+      updateOne: {
+        filter: { _id: update.id },
+        update: {
+          $inc: {
+            seatsAvailable: -update.seatsReserved,
+          },
+        },
+      },
+    }))
+
+    const result = await Flight.bulkWrite(bulkOperations, { ordered: true })
+    res.status(200).json({
+      message: `Successfully updated ${result.modifiedCount} flights.`,
+    })
   } catch (error) {
     res.status(400).json({ message: error.message })
   }
