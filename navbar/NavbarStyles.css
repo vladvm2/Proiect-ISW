@@ -1,0 +1,92 @@
+/* NavbarStyles.css */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease-in-out;
+}
+
+/* Stil pentru ascunderea navbar-ului */
+.hidden {
+  top: -100px; /* Ascunde navbar-ul prin deplasarea în sus (ajusteați în funcție de înălțimea navbar-ului) */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon,
+.language-button,
+.currency-button {
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* Stiluri actualizate pentru meniul mobil off-canvas */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100%; /* Inițial ascuns în afara ecranului */
+  width: 75%; /* Lățimea meniului mobil */
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 1500;
+}
+
+.navbar.expanded .mobile-nav {
+  right: 0; /* Afișează meniul mobil când navbar-ul este extins */
+}
+
+@media screen and (max-width: 940px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu,
+  .nav-icons {
+    display: none; /* Ascunde meniul principal și iconițele pe mobil */
+  }
+
+  .mobile-nav,
+  .mobile-nav-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-nav li,
+  .mobile-nav-icons .icon {
+    padding: 15px;
+    border-bottom: 1px solid #eee; /* Separă vizual elementele meniului mobil */
+  }
+}
