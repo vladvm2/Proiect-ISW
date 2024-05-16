@@ -1,0 +1,42 @@
+.about-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    flex: 0 0 250px;
+    padding: 20px;
+    background: #f3f3f3;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li button {
+    text-decoration: none;
+    color: #333;
+    background: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar li button:hover,
+  .sidebar li button.active {
+    background-color: #e9e9e9;
+  }
+  
+  .sidebar li .active {
+    background-color: #e9e9e9;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
