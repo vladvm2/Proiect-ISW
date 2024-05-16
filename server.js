@@ -10,6 +10,7 @@ import userRoutes from './routes/user.js'
 import destinationRoutes from './routes/destination.js'
 import attractionRoutes from './routes/attraction.js'
 import flightRoutes from './routes/flight.js'
+import reservationRoutes from './routes/reservation.js'
 
 dotenv.config()
 
@@ -27,6 +28,7 @@ app.use('/api/user', userRoutes)
 app.use('/api/destinations', requireAuth, destinationRoutes)
 app.use('/api/attractions', requireAuth, attractionRoutes)
 app.use('/api/flights', requireAuth, flightRoutes)
+app.use('/api/reservations', requireAuth, reservationRoutes)
 
 //connect to db
 mongoose

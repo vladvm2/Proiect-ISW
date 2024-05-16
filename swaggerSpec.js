@@ -181,6 +181,61 @@ const options = {
             createdAt: '2023-01-01T00:00:00Z',
           },
         },
+        Reservation: {
+          type: 'object',
+          required: [
+            'user',
+            'departure',
+            'arrival',
+            'departureDateTime',
+            'arrivalDateTime',
+            'price',
+            'seatsReserved',
+          ],
+          properties: {
+            user: {
+              type: 'string',
+              description: 'MongoDB ObjectId referencing User.',
+            },
+            departure: {
+              type: 'string',
+              description:
+                'Airport code or name from which the flight departs.',
+            },
+            arrival: {
+              type: 'string',
+              description: 'Airport code or name where the flight arrives.',
+            },
+            departureDateTime: {
+              type: 'string',
+              format: 'date-time',
+              description: 'Date and time of departure.',
+            },
+            arrivalDateTime: {
+              type: 'string',
+              format: 'date-time',
+              description: 'Date and time of arrival.',
+            },
+            price: {
+              type: 'number',
+              format: 'float',
+              description: 'Price of one ticket for the flight.',
+            },
+            seatsReserved: {
+              type: 'number',
+              description: 'Number of seats available on the flight.',
+            },
+          },
+          example: {
+            user: '507f191e810c19729de860ea',
+            departure: 'Bucuresti',
+            arrival: 'Paris',
+            departureDateTime: '2023-10-12T06:00:00Z',
+            arrivalDateTime: '2023-10-12T09:00:00Z',
+            price: 1200,
+            seatsReserved: 2,
+          },
+        },
       },
     },
     security: [
